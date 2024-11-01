@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Berger Hut</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-image: url(https://media.istockphoto.com/id/182744943/photo/burger.jpg?s=612x612&w=0&k=20&c=pi20IieXf8UNk6SeJy-cHxubaVD7L5Rnw2i0Qo8vNyM=); /* Replace with your 4K image URL */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        header {
+            background-color: rgba(217, 83, 79, 0.9); /* Semi-transparent header */
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #e2dfdf; /* Matching the header color */
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        .info-item {
+            margin: 15px 0;
+        }
+
+        .info-item i {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #d9534f;
+        }
+
+        .contact-form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            transition: border 0.3s;
+            font-size: 16px;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border: 1px solid #d9534f;
+            outline: none;
+        }
+
+        .contact-form button {
+            padding: 15px;
+            background-color: #d9534f;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #c9302c;
+        }
+
+        footer {
+            background-color: rgba(217, 83, 79, 0.9); /* Semi-transparent footer */
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        @media (min-width: 600px) {
+            .contact-form {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .contact-form textarea {
+                grid-column: span 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>123 Burger Lane, Food City, Country</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>+1 234 567 890</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <span>info@Bergereer.com</span>
+            </div>
+        </div>
+
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Bergereer. All rights reserved.</p>
+    </footer>
+</body>
+</html>

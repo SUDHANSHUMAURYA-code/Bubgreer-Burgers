@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - Berger Hut</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-image: url('your-4k-background-image.jpg'); /* Replace with your 4K image URL */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: rgba(217, 83, 79, 0.9);
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .order-container {
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .menu-item h3 {
+            color: #d9534f;
+        }
+
+        .order-form {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .order-form input[type="number"] {
+            width: 50px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        .order-form button {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #d9534f;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .order-form button:hover {
+            background-color: #c9302c;
+        }
+
+        footer {
+            background-color: rgba(217, 83, 79, 0.9);
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+        .a{
+            margin-left: 40px ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Order Your Burger</h1>
+    </header>
+
+    <div class="order-container">
+        <div class="menu-item">
+            <div>
+                <h3>Classic Cheeseburger</h3>
+                <p>$2</p>
+            </div>
+            <input class="a" type="number" min="0" value="0">
+        </div>
+        <div class="menu-item">
+            <div>
+                <h3>Veggie Delight</h3>
+                <p>$5</p>
+            </div>
+            <input class="b" type="number" min="0" value="0">
+        </div>
+        <div class="menu-item">
+            <div>
+                <h3>Spicy BBQ Burger</h3>
+                <p>$10</p>
+            </div>
+            <input class="c" type="number" min="0" value="0">
+        </div>
+
+        <form class="order-form" action="web1.html">
+            <button type="submit" >Submit Order</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Bergereer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
